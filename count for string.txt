@@ -1,0 +1,7 @@
+int mycount(string s, int a, int b, char c) {
+	int r = 0;
+	for (int i = a; i < b; i++) {
+		if (s[i] == c)r++;
+	}
+	return r;
+}

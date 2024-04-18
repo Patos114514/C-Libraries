@@ -1,0 +1,8 @@
+ll mpow(ll a, ll b, ll m) {
+	if (b == 0)return 1;
+	if (b % 2 == 0) {
+		ll x = mpow(a, b / 2, m);
+		return x * x % m;
+	}
+	else return a * mpow(a, b - 1, m) % m;
+}

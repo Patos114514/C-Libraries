@@ -1,0 +1,37 @@
+#include<iostream>
+#include<string>
+#include<vector>
+#include<cmath>
+#include<algorithm>
+#include<map>
+#include<iomanip>
+#include<set>
+#include<numeric>
+#include<bitset>
+#include<queue>
+
+#define rep(i, n) for (int i = 0; i < (int)(n); i++)
+#define all(v) v.begin(), v.end()
+#define dump(x)  cout << #x << " = " << (x) << endl
+#define YES(n) cout << ((n) ? "YES" : "NO"  ) << endl
+#define Yes(n) cout << ((n) ? "Yes" : "No"  ) << endl
+#define FOR(i,a,b) for(int i=(a);i<(b);++i)
+#define FORE(x,a) for(auto& (x) : (a) )
+#define ENDL cout<<endl
+#define VECCIN(x) for(auto&youso_: (x) )cin>>youso_
+#define VECCOUT(x) for(auto&youso_: (x) )cout<<youso_<<" ";cout<<endl
+#define pb(a) push_back(a)
+#define mp make_pair
+
+#define mll map<long long,long long>
+#define msl map<string,long long>
+#define qll queue<long long>
+#define pqll priority_queue<long long>
+#define vi vector<int>
+#define vs vector<string>
+#define vll vector<long long>
+#define vvll vector<vector<long long>>
+
+using ll = long long;
+using ull = unsigned long long;
+using namespace std;

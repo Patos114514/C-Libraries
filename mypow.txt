@@ -1,0 +1,5 @@
+ll mypow(ll x, ll y) {
+	ll r = 1;
+	rep(i, y)r *= x;
+	return r;
+}

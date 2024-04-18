@@ -1,0 +1,10 @@
+string totwo(ll n) {
+	string str = "";
+	while (n) {
+		str.push_back('0' + n % 2);
+		n /= 2;
+	}
+	reverse(str.begin(), str.end());
+	if (str == "")str = "0";
+	return str;
+}

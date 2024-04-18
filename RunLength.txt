@@ -1,0 +1,11 @@
+vector<pair<char,ll>> zip(string s) {
+	vector<pair<char, ll>>v;
+	ll n = s.size();
+	for (int l = 0; l < n;) {
+		int r = l + 1;
+		while (r < n && s[l] == s[r])r++;
+		v.push_back(make_pair(s[l], r - l));
+		l = r;
+	}
+	return v;
+}

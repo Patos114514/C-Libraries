@@ -1,0 +1,26 @@
+
+	string s;
+	cin >> s;
+	ll l = s.size();
+	rep(i, (1 << l - 1)) {
+		bitset<9>b(i);
+		vs p;
+		ll pos = 0, c = 1;
+		while (pos < l) {
+			if (c + pos == l) {
+				p.push_back(s.substr(pos));
+				break;
+			}
+			else if (b.test(c - 1 + pos)) {
+				p.push_back(s.substr(pos, c));
+				pos += c;
+				c = 0;
+			}
+			c++;
+		}
+		for (string x : p) {
+			ans += stoll(x);
+//			cout << x << " ";
+		}
+//		cout << endl;
+	}

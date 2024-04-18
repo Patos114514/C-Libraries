@@ -1,0 +1,11 @@
+vll PrimeFactor(ll x) {
+	vll v;
+	for (int i = 2; i <= sqrt(x); i++) {
+		while (x % i == 0) {
+			x /= i;
+			v.push_back(i);
+		}
+	}
+	if (x != 1)v.push_back(x);
+	return v;
+}

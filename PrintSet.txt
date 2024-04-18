@@ -1,0 +1,7 @@
+void PrintSet(set<ll>s) {
+	cout << "{";
+	for (ll x : s) {
+		cout << x << ", ";
+	}
+	cout << "}" << endl;
+}
